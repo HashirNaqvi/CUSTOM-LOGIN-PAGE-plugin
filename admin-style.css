@@ -1,0 +1,308 @@
+#crfb-field-palette li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  background: #f5f5f5;
+}
+#crfb-field-palette .dashicons {
+  margin-right: 8px;
+  color: #0073aa;
+}
+#crfb-canvas-fields .crfb-field {
+  position: relative;
+  padding: 8px 10px;
+  margin: 5px 0;
+  background: #f5f5f5;
+  cursor: move;
+  display: flex;
+  align-items: center;
+}
+.crfb-delete {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: red;
+}
+#crfb-form-preview {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 20px;
+}
+.field-editor {
+  margin-top: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.preview-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: background 0.3s ease;
+}
+.preview-field:hover {
+  background: #e6f7ff;
+}
+.preview-icons {
+  display: flex;
+  gap: 10px;
+}
+.preview-icons .icon {
+  cursor: pointer;
+  color: #0073aa;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.preview-icons .icon:hover {
+  color: #005177;
+}
+.preview-field input,
+.preview-field textarea,
+.preview-field select {
+  flex: 1;
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #0073aa;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+.icon-button:hover {
+  background-color: #005f8b;
+}
+.reset-button {
+  background-color: #cc0000;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+.reset-button:hover {
+  background-color: #b30000;
+}
+#crfb-field-palette {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#crfb-field-palette ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#crfb-field-palette li {
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  background-color: #e0e0e0;
+}
+#crfb-layout {
+  display: flex;
+  margin-bottom: 20px;
+}
+#crfb-field-palette {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#crfb-form-canvas {
+  flex: 2;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#crfb-form-preview {
+  margin-top: 20px;
+}
+
+/* Draggable field palette
+#crfb-field-palette {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#crfb-field-palette ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#crfb-field-palette li {
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  background-color: #e0e0e0;
+}
+
+/* Main layout and form canvas styling */
+#crfb-layout {
+  display: flex;
+  margin-bottom: 20px;
+}
+#crfb-form-canvas {
+  flex: 2;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#crfb-canvas-fields .crfb-field {
+  position: relative;
+  padding: 8px 10px;
+  margin: 5px 0;
+  background: #f5f5f5;
+  cursor: move;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+#crfb-canvas-fields .crfb-field:hover {
+  background-color: #e0e0e0;
+}
+
+/* Delete and move icon styling */
+.crfb-delete,
+.crfb-move {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.crfb-delete {
+  right: 10px;
+  color: red;
+}
+.crfb-move {
+  right: 30px;
+  color: #0073aa;
+}
+
+/* Preview area styling */
+#crfb-form-preview {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 20px;
+}
+.preview-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: background 0.3s ease;
+}
+.preview-field:hover {
+  background: #e6f7ff;
+}
+
+/* Input styling within preview */
+.preview-field input,
+.preview-field textarea,
+.preview-field select {
+  flex: 1;
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Icon buttons for preview actions */
+.preview-icons {
+  display: flex;
+  gap: 10px;
+}
+.preview-icons .icon {
+  cursor: pointer;
+  color: #0073aa;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.preview-icons .icon:hover {
+  color: #005177;
+}
+
+/* Popup customization panel */
+.field-editor {
+  margin-top: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.field-customization-popup {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 15px;
+  width: 250px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Reset button */
+.reset-button {
+  background-color: #cc0000;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+.reset-button:hover {
+  background-color: #b30000;
+} */
