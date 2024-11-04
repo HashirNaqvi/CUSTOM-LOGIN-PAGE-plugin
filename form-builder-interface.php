@@ -1,3 +1,5 @@
+<?php 
+?>
 <div class="wrap">
     <h1>Registration Form Builder</h1>
     <div id="crfb-form-builder">
@@ -39,3 +41,4 @@
         </div>
     </div>
 </div>
+<?php  ?>
