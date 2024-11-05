@@ -37,6 +37,15 @@ A custom WordPress plugin  that allow user to show header and footer on the logi
   - Log in to your WordPress dashboard, go to Plugins, locate Custom Registration Form Builder, and click Activate.
 ## 🚀 Usage
 
+- Access the Form Builder:
+  - After activation, go to Form Builder in your WordPress dashboard menu.
+- Add Fields:
+  - Drag a field type from the field palette and drop it onto the form canvas.
+- Customize Fields:
+  - Click on any field to open the customization panel. Here, you can edit the field label, placeholder text, and required status.
+- Preview and Save:
+  - Preview your form live on the right side as you make changes.
+  - Click Save Form to store the configuration, or Reset Form to start with a blank canvas.
 
 ## 👤 Credits
 
